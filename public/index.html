@@ -34,7 +34,7 @@
           wildcard: '%QUERY',
           transform: function(response) {
           console.log(response.data);
-            return response.data;
+            return Array.isArray(response.data) ? response.data : [response.data];
           }
         },
         rateLimitBy: 'throttle',
