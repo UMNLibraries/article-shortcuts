@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>DOI Search</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
+  </head>  
+  <body>
+    <h1 id="main-title">DOI Search</h1>
+    <div id="container">
+      <form action="#" method="post" accept-charset="utf-8">
+        <input class="typeahead"  type="text" name="search" value="" id="citesearch" placeholder="Search citation..." size="100"/>
+        <input type="submit" value="Continue &rarr;"/>
+      </form>
+    </div>
+    <script>
+      var Bhound = Bloodhound.noConflict();
+			var bh = new Bhound({
+        initialize: true,
+        queryTokenizer: Bhound.tokenizers.whitespace,
+        datumTokenizer: Bhound.tokenizers.whitespace,
+        sufficient: 1,
+        remote: {
+          url: 'search.php?q=%QUERY',
+          wildcard: '%QUERY'
+        },
+        rateLimitBy: 'throttle',
+        rateLimitWait: 100
+      });
+
+
+      $(document).ready(function() {
+        $('#citesearch').typeahead({
+
+          hint: false,
+          highlight: true,
+          minLength: 15
+        },
+				{
+					source: bh,
+          limit: 5,
+          display: function(value) {
+            //return 'DOI: ' + value.doi + ' ' + value.article.title;
+            return '';
+          },
+          templates: {
+            suggestion: function(value) {
+              var doilink =  'https://ezproxy.lib.umn.edu/login?qurl=' + encodeURIComponent('https://dx.doi.org/' + value.doi);
+              var authors = value.article.authors.map(function(a) {
+                return a.name.surname;
+              });
+              return '<div><a href="' + doilink + '">' + authors.join(", ") + '|' + value.article.title + '|' + value.full_title + '|' + ' Vol: ' + value.volume + ' Issue: ' + value.issue + ' Pages: ' + value.article.pagination + ' DOI: ' + value.doi + '</a></div>';
+            },
+          }
+				}
+			);
+      $('#citesearch').bind('typeahead:select', function(evt, suggestion) {
+        evt.preventDefault();
+        window.location = "https://ezproxy.lib.umn.edu/login?qurl=" + encodeURIComponent("https://dx.doi.org/" + suggestion.doi);
+      });
+		});
+    </script>
+  </body>
+</html>

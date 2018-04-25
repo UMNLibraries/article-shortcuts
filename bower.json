@@ -1,0 +1,7 @@
+{
+  "name": "doi-search",
+  "version": "0.0.0",
+  "dependencies": {
+    "typeahead.js": "~>0.11.1"
+  }
+}
