@@ -40,8 +40,10 @@
           url: '/search?q=%QUERY',
           wildcard: '%QUERY',
           transform: function(response) {
-          console.log(response.data);
             return Array.isArray(response.data) ? response.data : [response.data];
+          },
+          identify: function(datum) {
+            return datum.id
           }
         },
         rateLimitBy: 'throttle',
@@ -70,7 +72,11 @@
               var authors = value.article.authors.map(function(a) {
                 return a.name.surname;
               });
-              return '<div><a href="' + doilink + '">' + authors.join(", ") + '|' + value.article.title + '|' + value.full_title + '|' + ' Vol: ' + value.volume + ' Issue: ' + value.issue + ' Pages: ' + value.article.pagination + ' DOI: ' + value.doi + '</a></div>';
+              if (authors.length > 5) {
+                authors = authors.slice(0, 4);
+                authors.push('et al');
+              }
+              return '<div><a href="' + doilink + '">' + authors.join(", ") + '|' + value.article.title + '|' + value['full-title'] + '|' + ' Vol: ' + value.volume + ' Issue: ' + value.issue + ' Pages: ' + value.article.pagination + ' DOI: ' + value.doi + '</a></div>';
             },
           }
 				}
