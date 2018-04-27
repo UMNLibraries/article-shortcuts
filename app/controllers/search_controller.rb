@@ -37,8 +37,10 @@ class SearchController < ApplicationController
     }
   end
 
-  def es_query(search)
+  def es_query(search, size=5)
     {
+      from: 0,
+      size: size,
       query: {
         bool: { 
           should: [
