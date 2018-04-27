@@ -4,11 +4,14 @@ require 'anystyle'
 class SearchController < ApplicationController
   def search
     if params[:q]
-      @dois = doi(params[:q])
+      # Remove leading,trailing newlines and trailing dots
+      q = params[:q].strip.sub /\.*\z/, ''
+      @dois = doi(q)
       # Query by list of extracted DOIs or by normal search
       es_body = @dois.empty? ? es_query(params[:q]) : es_by_dois(@dois)
       result = es.search index: 'article', body: es_body
       article_results = result['hits']['hits'].map { |r| ArticleResult.new r }
+      # This is patched through ActiveModel::Serializers for JSON:API serialization
       render json: article_results
     end
   end
