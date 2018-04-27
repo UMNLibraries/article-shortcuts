@@ -1,4 +1,6 @@
 require 'simple_doi'
+require 'anystyle'
+
 class SearchController < ApplicationController
   def search
     if params[:q]

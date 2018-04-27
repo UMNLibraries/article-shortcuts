@@ -6,6 +6,16 @@ GIT
       json
       nokogiri
 
+GIT
+  remote: https://github.com/inukshuk/anystyle
+  revision: 3452e92e04832f31779ad1b8f95af35edca8c35a
+  specs:
+    anystyle (1.0.0)
+      anystyle-data (~> 1.0)
+      bibtex-ruby (~> 4.0)
+      namae (~> 1.0)
+      wapiti (~> 1.0, >= 1.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,7 +63,10 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    anystyle-data (1.0.0)
     arel (8.0.0)
+    bibtex-ruby (4.4.6)
+      latex-decode (~> 0.0)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (10.0.2)
@@ -99,6 +112,7 @@ GEM
       multi_json (>= 1.2)
     json (2.1.0)
     jsonapi-renderer (0.2.0)
+    latex-decode (0.3.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -114,6 +128,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
+    namae (1.0.1)
     nio4r (2.3.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -188,6 +203,8 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.10)
       execjs (>= 0.3.0, < 3)
+    wapiti (1.0.2)
+      builder (~> 3.2)
     web-console (3.6.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -204,6 +221,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  anystyle!
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
