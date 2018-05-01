@@ -2,6 +2,9 @@ require 'simple_doi'
 require 'anystyle'
 
 class SearchController < ApplicationController
+  CITE_AUTHORS_MIN_LENGTH = 10
+  CITE_TITLE_MIN_LENGTH = 20
+
   def search
     #render(nothing: true, status: :bad_request) unless params[:q].to_s.length > 0
 
@@ -11,9 +14,9 @@ class SearchController < ApplicationController
     # Query by list of extracted DOIs or by normal search
     es_body = if !@dois.empty?
       es_by_dois(@dois)
+    elsif cite = parse_cite(q)
+      es_by_title_author(cite[:title], cite[:authors])
     else
-      cite = parse_cite q
-      #if cite[:author]
       es_by_any(params[:q])
     end
     result = es.search index: 'article', body: es_body
@@ -28,16 +31,26 @@ class SearchController < ApplicationController
     SimpleDOI.extract(search).map { |d| d.to_s.upcase }
   end
 
+  # Attempt to parse authors & title out of a citation with AnyStyle
+  # Returns Hash {:authors, :title} if they meet length requirements or nil
   def parse_cite(search)
     # Default parser will attempt to separate on newlines
     # which does not work well for
     @parser ||= AnyStyle::Parser.new
-    @parser.parse search
+    cite = @parser.parse(search).first rescue {}
+    # Condense an array of individual first/last hash pairs or a ":literal => all authors..."
+    # into one long string
+    authors = cite[:author].map(&:values).flatten.join(' ') rescue ""
+    # Stuff all titles into an array
+    title = cite[:title].flatten.join(' ') rescue ""
+    if authors.length >= CITE_AUTHORS_MIN_LENGTH && title.length >= CITE_TITLE_MIN_LENGTH
+      {authors: authors, title: title}
+    end
   end
 
   def es
     # reads ENV['ELASTICSEARCH_URL'] or localhost:9200
-    @es ||= Elasticsearch::Client.new
+    @es ||= Elasticsearch::Client.new log: true
   end
 
   def es_by_dois(dois)
@@ -69,11 +82,12 @@ class SearchController < ApplicationController
     {
       from: 0,
       size: size,
+      #min_score: "20",
       query: {
         bool: {
-          should: [
+          must: [
             {match: {
-              'article.title' => {query: title, operator: 'and', boost: 2}
+              'article.title' => {query: title, operator: 'and'}
             }},
             {
               nested: {
