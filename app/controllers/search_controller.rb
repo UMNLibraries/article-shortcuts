@@ -73,13 +73,13 @@ class SearchController < ApplicationController
       when search.length < 40
         40
       else
-        50
+        30
     end
     Rails.logger.warn "Min score: #{min_score}"
     {
       from: 0,
       size: size,
-      #min_score: min_score,
+      min_score: min_score,
       query: {
         simple_query_string: {
           query: search,
