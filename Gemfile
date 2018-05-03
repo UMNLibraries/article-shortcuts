@@ -50,3 +50,4 @@ gem 'simple_doi', '~>1.2.1', git: 'https://github.com/UMNLibraries/simpledoi-rub
 gem 'doimeta2es', git: 'https://github.com/UMNLibraries/doimeta2es', branch: 'master'
 gem 'anystyle', git: 'https://github.com/inukshuk/anystyle'
 gem 'curb'
+gem 'gdbm'
