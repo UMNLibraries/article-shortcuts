@@ -19,12 +19,28 @@
       .tt-cursor a:link, .tt-cursor a:visited {
         color: white;
       }
-      .cite-component:after {
-        content: "\23FA";
+      .cite-component {
+        /*content: "\23FA";*/
+        margin-right: 0.5em;
       }
       .cite-authors ul {
         display: inline;
         padding: 0;
+      }
+      .cite-pubinfo:after {
+        content: ": ";
+      }
+      .cite-date:before {
+        content: "(";
+      }
+      .cite-date:after {
+        content: ")";
+      }
+      .cite-volume:after {
+        content: ", "
+      }
+      .cite-issue:before {
+        content: "no. ";
       }
       .cite-authors ul li {
         display: inline;
@@ -34,6 +50,14 @@
       }
       .cite-authors ul li:last-child:after {
         content: "";
+      }
+      .cite-title:before { content: '"'; }
+      .cite-title:after  { content: '."'; }
+      .cite-container {
+        font-style: italic;
+      }
+      .cite-doi:before {
+        content: "doi:";
       }
       .cite-doi:after {
         content: "";
@@ -58,7 +82,7 @@
               .append($('<span class="cite-component cite-title"/>').text(data.article.title))
               .append($('<span class="cite-component cite-container"/>').text(data['full-title']))
               .append(this.pubInfo(data))
-              .append($('<span class="cite-component cite-doi"/>').text("DOI:" + data.doi));
+              .append($('<span class="cite-component cite-doi"/>').text(data.doi));
 
             // Output as a plain HTML <div>
             return elem.wrap('<div></div>').parent()[0].outerHTML;
@@ -84,11 +108,14 @@
             return l;
           },
           pubInfo: function(data) {
-            var pub = $('<span class="cite-component cite-pubinfo"/>')
-            if (data.volume != "") pub.append($('<span class="cite-volume"/>').text("Vol: " + data.volume + " "));
-            if (data.issue != "") pub.append($('<span class="cite-issue"/>').text("Issue: " + data.issue + " "));
-            if (data.article.pagination != "") pub.append($('<span class="cite-pagination"/>').text("Pages: " + data.article.pagination));
-            return pub;
+            var pubcontainer = $('<span class="cite-component"/>'),
+                pub = $('<span class="cite-pubinfo"/>');
+            if (data.volume != "") pub.append($('<span class="cite-volume"/>').text(data.volume));
+            if (data.issue != "") pub.append($('<span class="cite-issue"/>').text(data.issue));
+            if (data['publication-date']) pub.append($('<span class="cite-date"/>').text((new Date(data['publication-date'])).getFullYear()));
+            pubcontainer.append(pub);
+            if (data.article.pagination != "") pubcontainer.append($('<span class="cite-pagination"/>').text(data.article.pagination));
+            return pubcontainer;
           }
         },
         escape: function(str) {
