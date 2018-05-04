@@ -19,6 +19,25 @@
       .tt-cursor a:link, .tt-cursor a:visited {
         color: white;
       }
+      .cite-component:after {
+        content: "\23FA";
+      }
+      .cite-authors ul {
+        display: inline;
+        padding: 0;
+      }
+      .cite-authors ul li {
+        display: inline;
+      }
+      .cite-authors ul li:after {
+        content: ", ";
+      }
+      .cite-authors ul li:last-child:after {
+        content: "";
+      }
+      .cite-doi:after {
+        content: "";
+      }
     </style>
   </head>  
   <body>
@@ -30,6 +49,52 @@
       </form>
     </div>
     <script>
+      var umnLibArticleSearch = {
+        citation: {
+          makeCite: function(data) {
+            var e = umnLibArticleSearch.escape,
+                elem = $('<a>').attr('href', this.url(data.doi));
+            elem.append($('<span class="cite-component cite-authors">').append(this.authorsList(data.article.authors)))
+              .append($('<span class="cite-component cite-title"/>').text(data.article.title))
+              .append($('<span class="cite-component cite-container"/>').text(data['full-title']))
+              .append(this.pubInfo(data))
+              .append($('<span class="cite-component cite-doi"/>').text("DOI:" + data.doi));
+
+            // Output as a plain HTML <div>
+            return elem.wrap('<div></div>').parent()[0].outerHTML;
+          },
+          url: function(doi) {
+            return 'https://ezproxy.lib.umn.edu/login?qurl=' + encodeURIComponent('https://dx.doi.org/' + doi);
+          },
+          authors: function(authors) {
+            var authorsArr = authors.map(function(a) {
+              return a.name.surname;
+            });
+            if (authorsArr.length > 5) {
+              authorsArr = authorsArr.slice(0, 4);
+              authorsArr.push('et al.');
+            }
+            return authorsArr;
+          },
+          authorsList: function(authors) {
+            var l = $('<ul/>');
+            this.authors(authors).forEach(function(a) {
+              l.append($('<li/>').text(a));
+            });
+            return l;
+          },
+          pubInfo: function(data) {
+            var pub = $('<span class="cite-component cite-pubinfo"/>')
+            if (data.volume != "") pub.append($('<span class="cite-volume"/>').text("Vol: " + data.volume + " "));
+            if (data.issue != "") pub.append($('<span class="cite-issue"/>').text("Issue: " + data.issue + " "));
+            if (data.article.pagination != "") pub.append($('<span class="cite-pagination"/>').text("Pages: " + data.article.pagination));
+            return pub;
+          }
+        },
+        escape: function(str) {
+          return $('<span/>').text(str).html();
+        }
+      };
       var Bhound = Bloodhound.noConflict();
 			var bh = new Bhound({
         initialize: true,
@@ -66,23 +131,14 @@
           },
           templates: {
             suggestion: function(suggestion) {
-              value = suggestion.attributes;
-              var doilink =  'https://ezproxy.lib.umn.edu/login?qurl=' + encodeURIComponent('https://dx.doi.org/' + value.doi);
-              var authors = value.article.authors.map(function(a) {
-                return a.name.surname;
-              });
-              if (authors.length > 5) {
-                authors = authors.slice(0, 4);
-                authors.push('et al');
-              }
-              return '<div><a href="' + doilink + '">' + authors.join(", ") + '|' + value.article.title + '|' + value['full-title'] + '|' + ' Vol: ' + value.volume + ' Issue: ' + value.issue + ' Pages: ' + value.article.pagination + ' DOI: ' + value.doi + '</a></div>';
+              return umnLibArticleSearch.citation.makeCite(suggestion.attributes);
             },
           }
 				}
 			);
       $('#citesearch').bind('typeahead:select', function(evt, suggestion) {
         evt.preventDefault();
-        window.location = "https://ezproxy.lib.umn.edu/login?qurl=" + encodeURIComponent("https://dx.doi.org/" + suggestion.attributes.doi);
+        window.location = umnLibArticleSearch.citation.url(suggestion.attributes.doi);
       });
 		});
     </script>
