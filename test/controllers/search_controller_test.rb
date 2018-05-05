@@ -5,7 +5,7 @@ class SearchControllerTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
   def test_single_doi_search
-    get '/search/'
+    get search_url params: { q: 'A generic test string' }
   end
   def test_multi_doi_search
   end
