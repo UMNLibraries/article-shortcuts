@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/UMNLibraries/doimeta2es
-  revision: b0a21346e992f084ca2d0cbdd5b2ed36d881a9b1
+  revision: ac9d5ac8abbb016fef72c56dfa6765055f7f743f
   branch: master
   specs:
-    doimeta2es (0.0.1)
+    doimeta2es (0.0.3)
 
 GIT
   remote: https://github.com/UMNLibraries/simpledoi-ruby
