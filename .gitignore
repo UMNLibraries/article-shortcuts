@@ -23,3 +23,5 @@
 .byebug_history
 
 bower_components
+/public/assets/*
+!/public/assets/.keep
