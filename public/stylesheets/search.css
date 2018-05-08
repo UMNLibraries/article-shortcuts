@@ -1,0 +1,56 @@
+.tt-suggestion {
+  padding: 4px;
+  border: 1px solid black;
+  background-color: #eee;
+  margin-top: 4px;
+}
+.tt-cursor {
+  background-color: #666;
+  color: white;
+}
+.tt-cursor a:link, .tt-cursor a:visited {
+  color: white;
+}
+.cite-component {
+  /*content: "\23FA";*/
+  margin-right: 0.5em;
+}
+.cite-authors ul {
+  display: inline;
+  padding: 0;
+}
+.cite-pubinfo:after {
+  content: ": ";
+}
+.cite-date:before {
+  content: "(";
+}
+.cite-date:after {
+  content: ")";
+}
+.cite-volume:after {
+  content: ", "
+}
+.cite-issue:before {
+  content: "no. ";
+}
+.cite-authors ul li {
+  display: inline;
+}
+.cite-authors ul li:after {
+  content: ", ";
+}
+.cite-authors ul li:last-child:after {
+  content: "";
+}
+.cite-title:before { content: '"'; }
+.cite-title:after  { content: '."'; }
+.cite-container {
+  font-style: italic;
+}
+.cite-doi:before {
+  content: "doi:";
+}
+.cite-doi:after {
+  content: "";
+}
