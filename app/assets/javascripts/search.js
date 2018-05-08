@@ -69,7 +69,7 @@ var bh = new Bhound({
 
 
 $(document).ready(function() {
-  $('#citesearch').typeahead({
+  $('#basic-search-input').typeahead({
     hint: false,
     highlight: true,
     minLength: 15

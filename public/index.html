@@ -5,15 +5,48 @@
     <title>DOI Search</title>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
+    <link rel='stylesheet' type='text/css' href='https://www.lib.umn.edu/brand/1.7.0/ui/css/homepage.css'>
     <link rel='stylesheet' type='text/css' href='stylesheets/search.css'>
   </head>  
   <body>
-    <h1 id="main-title">DOI Search</h1>
-    <div id="container">
-      <form action="#" method="post" accept-charset="utf-8">
-        <input class="typeahead"  type="text" name="search" value="" id="citesearch" placeholder="Search citation..." size="100"/>
-        <input type="submit" value="Continue &rarr;"/>
+    <!--h1 id="main-title">Article Search</h1-->
+    <div class="panel-body" style="padding:30px; padding-bottom:15px;">
+      <h2 class="h3" style="margin-top:0;">Search for books, journals, articles, media and more.</h2>
+      <form action="//stacks.lib.umn.edu/janus" class="ga-track" id="basic-search-form" method="get" name="mncat-discovery" role="search">
+        <div class="input-group">
+          <label class="sr-only" for="basic-search-input">Search</label>
+          <span id="suggestions" class="twitter-typeahead" style="position: relative; display: inline-block;">
+            <input class="form-control input-lg search-suggestions tt-input typeahead" id="basic-search-input" name="search" tabindex="1" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+            <div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;">
+              <div class="tt-dataset tt-dataset-resource-links" aria-live="polite" aria-relevant="additions removals"></div>
+            </div>
+          </span>
+          <input name="target" type="hidden" value="MncatDiscovery">
+          <div class="input-group-btn">
+            <button class="btn btn-lg btn-umn-maroon" id="mncat-discovery-submit" tabindex="2" type="submit">
+              <svg aria-hidden="true" class="glyph glyph-search" role="presentation" viewBox="0 0 30 32">
+                <title>Search</title>
+                <desc>Magnifying glass</desc>
+                <path d="M20.576 14.848q0-3.296-2.368-5.632t-5.632-2.368-5.664 2.368-2.336 5.632 2.336 5.664 5.664 2.336 5.632-2.336 2.368-5.664zM29.728 29.728q0 0.928-0.704 1.6t-1.6 0.672q-0.96 0-1.6-0.672l-6.112-6.112q-3.2 2.208-7.136 2.208-2.56 0-4.896-0.992t-4-2.688-2.688-4-0.992-4.896 0.992-4.864 2.688-4.032 4-2.688 4.896-0.992 4.864 0.992 4.032 2.688 2.688 4.032 0.992 4.864q0 3.936-2.208 7.136l6.112 6.112q0.672 0.672 0.672 1.632z">
+                </path>
+              </svg>
+              <span class="hidden-xs">Go</span>
+            </button>
+            <button class="hidden-xs btn btn-lg btn-umn-maroon" data-toggle="dropdown" id="basic-search-dropdown" tabindex="3" type="button">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li> <a href="http://mncat.lib.umn.edu/">MNCAT Discovery Home</a> </li>
+              <li class="divider"></li>
+              <li> <a href="http://mncat.lib.umn.edu/advanced">Advanced Search</a> </li>
+              <li> <a href="http://mncat.lib.umn.edu/browse">Browse Libraries Catalog</a> </li>
+              <li> <a href="http://mncat.lib.umn.edu/journals">Find E-Journals</a> </li>
+            </ul>
+          </div>
+        </div>
       </form>
+      <br>
     </div>
     <script src="assets/application.js"></script>
   </body>
