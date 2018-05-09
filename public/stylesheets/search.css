@@ -1,19 +1,38 @@
+span.twitter-typeahead .tt-suggestion {
+  white-space: pre-wrap;
+}
+span.twitter-typeahead .tt-menu {
+  /*border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05);*/
+  display: none;
+}
 .tt-suggestion {
   padding: 4px;
-  border: 1px solid black;
   background-color: #eee;
   margin-top: 4px;
+  white-space: pre-wrap;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 .tt-cursor {
-  background-color: #666;
+  background-color: #7a0019;
+  color: white;
+}
+.tt-cursor:before {
+  content: "\00BB\0020";
   color: white;
 }
 .tt-cursor a:link, .tt-cursor a:visited {
   color: white;
 }
-.cite-component {
-  /*content: "\23FA";*/
-  margin-right: 0.5em;
+.cite-component-container:before {
+  content: "\23FA";
+}
+.cite-component-container:first-child:before,
+.cite-component-content:last-child:before {
+  content: "";
 }
 .cite-authors ul {
   display: inline;
@@ -23,16 +42,19 @@
   content: ": ";
 }
 .cite-date:before {
-  content: "(";
+  content: " (";
 }
 .cite-date:after {
   content: ")";
+}
+.cite-volume:before {
+  content: "Vol "
 }
 .cite-volume:after {
   content: ", "
 }
 .cite-issue:before {
-  content: "no. ";
+  content: "Issue ";
 }
 .cite-authors ul li {
   display: inline;
@@ -43,14 +65,11 @@
 .cite-authors ul li:last-child:after {
   content: "";
 }
-.cite-title:before { content: '"'; }
-.cite-title:after  { content: '."'; }
+.cite-title:before { content: open-quote; }
+.cite-title:after  { content: close-quote; }
 .cite-container {
   font-style: italic;
 }
 .cite-doi:before {
   content: "doi:";
-}
-.cite-doi:after {
-  content: "";
 }

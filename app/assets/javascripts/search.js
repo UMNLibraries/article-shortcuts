@@ -8,6 +8,7 @@ var umnLibArticleSearch = {
         .append($('<span class="cite-component cite-container"/>').text(data['full-title']))
         .append(this.pubInfo(data))
         .append($('<span class="cite-component cite-doi"/>').text(data.doi));
+      $('.cite-component', elem).wrap('<span class="cite-component-container"></span>')
 
       // Output as a plain HTML <div>
       return elem.wrap('<div></div>').parent()[0].outerHTML;
@@ -69,7 +70,7 @@ var bh = new Bhound({
 
 
 $(document).ready(function() {
-  $('#basic-search-input').typeahead({
+  $('#citesearch').typeahead({
     hint: false,
     highlight: true,
     minLength: 15
