@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1364" timestamp="2017-06-16 12:43:19">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Optics Letters</full_title>
+          <abbrev_title>Opt. Lett.</abbrev_title>
+          <issn media_type="print">0146-9592</issn>
+          <issn media_type="electronic">1539-4794</issn>
+          <coden>OPLEDP</coden>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="online">
+            <year>2005</year>
+          </publication_date>
+          <publication_date media_type="print">
+            <year>2005</year>
+          </publication_date>
+          <journal_volume>
+            <volume>30</volume>
+          </journal_volume>
+          <issue>5</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Optical stimulation of neural tissue in vivo</title>
+          </titles>
+          <contributors>
+            <person_name sequence="first" contributor_role="author">
+              <given_name>Jonathon</given_name>
+              <surname>Wells</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Chris</given_name>
+              <surname>Kao</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Karthik</given_name>
+              <surname>Mariappan</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Jeffrey</given_name>
+              <surname>Albea</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>E. Duco</given_name>
+              <surname>Jansen</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Peter</given_name>
+              <surname>Konrad</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Anita</given_name>
+              <surname>Mahadevan-Jansen</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="online">
+            <month>03</month>
+            <day>01</day>
+            <year>2005</year>
+          </publication_date>
+          <publication_date media_type="print">
+            <month>03</month>
+            <day>01</day>
+            <year>2005</year>
+          </publication_date>
+          <pages>
+            <first_page>504</first_page>
+          </pages>
+          <doi_data>
+            <doi>10.1364/OL.30.000504</doi>
+            <timestamp>20160115095622</timestamp>
+            <resource>https://www.osapublishing.org/abstract.cfm?URI=ol-30-5-504</resource>
+            <collection property="crawler-based">
+              <item crawler="iParadigms">
+                <resource>https://www.osapublishing.org/viewmedia.cfm?URI=ol-30-5-504&amp;seq=0</resource>
+              </item>
+            </collection>
+          </doi_data>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>

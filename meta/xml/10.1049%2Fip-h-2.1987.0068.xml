@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1049" timestamp="2010-06-09 17:48:40">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>IEE Proceedings H Microwaves, Antennas and Propagation</full_title>
+          <abbrev_title>IEE Proc. H Microw. Antennas Propag. UK</abbrev_title>
+          <issn media_type="print">0950107X</issn>
+          <coden>IPHPE7</coden>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <year>1987</year>
+          </publication_date>
+          <journal_volume>
+            <volume>134</volume>
+          </journal_volume>
+          <issue>4</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Dielectric measurements with an open-ended coaxial probe</title>
+          </titles>
+          <contributors>
+            <person_name sequence="first" contributor_role="author">
+              <given_name>T.P.</given_name>
+              <surname>Marsland</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>S.</given_name>
+              <surname>Evans</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="print">
+            <year>1987</year>
+          </publication_date>
+          <pages>
+            <first_page>341</first_page>
+          </pages>
+          <doi_data>
+            <doi>10.1049/ip-h-2.1987.0068</doi>
+            <timestamp>20100609163519</timestamp>
+            <resource>http://digital-library.theiet.org/content/journals/10.1049/ip-h-2.1987.0068</resource>
+            <collection property="list-based" multi-resolution="unlock" setbyID="aip" />
+            <collection property="list-based" setbyID="ieee_mr">
+              <item label="Xplore">
+                <resource>http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4643028</resource>
+              </item>
+            </collection>
+          </doi_data>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>

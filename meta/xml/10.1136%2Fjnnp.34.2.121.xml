@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1136" timestamp="2016-12-23 19:46:41">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Journal of Neurology, Neurosurgery &amp; Psychiatry</full_title>
+          <abbrev_title>Journal of Neurology, Neurosurgery &amp; Psychiatry</abbrev_title>
+          <issn media_type="print">0022-3050</issn>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <month>04</month>
+            <day>01</day>
+            <year>1971</year>
+          </publication_date>
+          <journal_volume>
+            <volume>34</volume>
+          </journal_volume>
+          <issue>2</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Electrophysiological estimation of the number of motor units within a human muscle</title>
+          </titles>
+          <contributors>
+            <person_name sequence="first" contributor_role="author">
+              <given_name>A. J.</given_name>
+              <surname>McComas</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>P. R. W.</given_name>
+              <surname>Fawcett</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>M. J.</given_name>
+              <surname>Campbell</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>R. E. P.</given_name>
+              <surname>Sica</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="print">
+            <month>04</month>
+            <day>01</day>
+            <year>1971</year>
+          </publication_date>
+          <pages>
+            <first_page>121</first_page>
+            <last_page>131</last_page>
+          </pages>
+          <publisher_item>
+            <item_number item_number_type="sequence-number">34/2/121</item_number>
+          </publisher_item>
+          <doi_data>
+            <doi>10.1136/jnnp.34.2.121</doi>
+            <timestamp>200811101201</timestamp>
+            <resource>http://jnnp.bmj.com/cgi/doi/10.1136/jnnp.34.2.121</resource>
+            <collection property="crawler-based">
+              <item crawler="iParadigms">
+                <resource>https://syndication.highwire.org/content/doi/10.1136/jnnp.34.2.121</resource>
+              </item>
+            </collection>
+          </doi_data>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>

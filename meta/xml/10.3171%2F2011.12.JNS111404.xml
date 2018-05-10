@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.3171" timestamp="2016-12-27 07:26:18">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Journal of Neurosurgery</full_title>
+          <abbrev_title>Journal of Neurosurgery</abbrev_title>
+          <issn media_type="print">0022-3085</issn>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <month>04</month>
+            <year>2012</year>
+          </publication_date>
+          <journal_volume>
+            <volume>116</volume>
+          </journal_volume>
+          <issue>4</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Preoperative identification of the facial nerve in patients with large cerebellopontine angle tumors using high-density diffusion tensor imaging</title>
+            <subtitle>Clinical article</subtitle>
+          </titles>
+          <contributors>
+            <person_name sequence="first" contributor_role="author">
+              <given_name>Neil</given_name>
+              <surname>Roundy</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Johnny B.</given_name>
+              <surname>Delashaw</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Justin S.</given_name>
+              <surname>Cetas</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="print">
+            <month>04</month>
+            <year>2012</year>
+          </publication_date>
+          <pages>
+            <first_page>697</first_page>
+            <last_page>702</last_page>
+          </pages>
+          <publisher_item>
+            <identifier id_type="doi">10.3171/2011.12.JNS111404</identifier>
+          </publisher_item>
+          <doi_data>
+            <doi>10.3171/2011.12.JNS111404</doi>
+            <resource>http://thejns.org/doi/10.3171/2011.12.JNS111404</resource>
+            <collection property="crawler-based">
+              <item crawler="iParadigms">
+                <resource>http://thejns.org/doi/pdf/10.3171/2011.12.JNS111404</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="b1-jns111404">
+              <doi>10.3171/jns.2005.102.4.0643</doi>
+            </citation>
+            <citation key="b2-jns111404">
+              <doi>10.1016/j.otohns.2006.10.009</doi>
+            </citation>
+            <citation key="b3-jns111404">
+              <doi>10.1111/j.1552-6569.2010.00508.x</doi>
+            </citation>
+            <citation key="b4-jns111404">
+              <doi>10.1227/01.NEU.0000367613.09324.DA</doi>
+            </citation>
+            <citation key="b5-jns111404">
+              <journal_title>Neurosurgery</journal_title>
+              <author>Kaltoft M</author>
+              <cYear>2011</cYear>
+            </citation>
+            <citation key="b6-jns111404">
+              <journal_title>AJNR Am J Neuroradiol</journal_title>
+              <author>Naganawa S</author>
+              <first_page>1179</first_page>
+              <volume>22</volume>
+              <cYear>2001</cYear>
+            </citation>
+            <citation key="b7-jns111404">
+              <doi>10.3171/2009.7.JNS0989</doi>
+            </citation>
+            <citation key="b8-jns111404">
+              <journal_title>AJNR Am J Neuroradiol</journal_title>
+              <author>Sartoretti-Schefer S</author>
+              <first_page>810</first_page>
+              <volume>21</volume>
+              <cYear>2000</cYear>
+            </citation>
+            <citation key="b9-jns111404">
+              <doi>10.1227/01.NEU.0000230260.95477.0A</doi>
+            </citation>
+            <citation key="b10-jns111404">
+              <journal_title>AJNR Am J Neuroradiol</journal_title>
+              <author>Stuckey SL</author>
+              <first_page>1219</first_page>
+              <volume>17</volume>
+              <cYear>1996</cYear>
+            </citation>
+            <citation key="b11-jns111404">
+              <doi>10.1002/jmri.20725</doi>
+            </citation>
+            <citation key="b12-jns111404">
+              <doi>10.1016/j.neuroimage.2008.03.036</doi>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>

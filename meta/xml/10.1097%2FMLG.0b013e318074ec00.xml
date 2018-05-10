@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1002" timestamp="2017-06-17 16:48:26">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>The Laryngoscope</full_title>
+          <abbrev_title>The Laryngoscope</abbrev_title>
+          <issn media_type="print">0023-852X</issn>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date>
+            <year>2007</year>
+          </publication_date>
+          <journal_volume>
+            <volume>117</volume>
+          </journal_volume>
+          <issue>9</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text" language="en">
+          <titles>
+            <title>Optical Stimulation of the Facial Nerve: A New Monitoring Technique?</title>
+            <subtitle />
+          </titles>
+          <contributors>
+            <person_name sequence="first" contributor_role="author">
+              <given_name>Ingo Ulrik</given_name>
+              <surname>Teudt</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Adam E.</given_name>
+              <surname>Nevel</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Agnella D.</given_name>
+              <surname>Izzo</surname>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Joseph T.</given_name>
+              <surname>Walsh</surname>
+              <suffix>Jr</suffix>
+            </person_name>
+            <person_name sequence="additional" contributor_role="author">
+              <given_name>Claus-Peter</given_name>
+              <surname>Richter</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="print">
+            <month>09</month>
+            <year>2007</year>
+          </publication_date>
+          <pages>
+            <first_page>1641</first_page>
+            <last_page>1647</last_page>
+          </pages>
+          <program name="AccessIndicators">
+            <license_ref applies_to="tdm" start_date="2015-09-01">http://doi.wiley.com/10.1002/tdm_license_1.1</license_ref>
+          </program>
+          <doi_data>
+            <doi>10.1097/MLG.0b013e318074ec00</doi>
+            <resource>http://doi.wiley.com/10.1097/MLG.0b013e318074ec00</resource>
+            <collection property="text-mining">
+              <item>
+                <resource content_version="vor">https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1097%2FMLG.0b013e318074ec00</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="R1-22-20070823">
+              <author>Bejjani</author>
+              <journal_title>Neurosurgery</journal_title>
+              <cYear>1998</cYear>
+              <volume>43</volume>
+              <first_page>491</first_page>
+            </citation>
+            <citation key="R2-22-20070823">
+              <author>Hanekom</author>
+              <journal_title>J Acoust Soc Am</journal_title>
+              <cYear>1998</cYear>
+              <volume>104</volume>
+              <first_page>2372</first_page>
+            </citation>
+            <citation key="R3-22-20070823">
+              <author>Eldridge</author>
+              <journal_title>Neurosurgery</journal_title>
+              <cYear>1992</cYear>
+              <volume>30</volume>
+              <first_page>962</first_page>
+            </citation>
+            <citation key="R4-22-20070823">
+              <author>Tonn</author>
+              <journal_title>J Neurol Neurosurg Psychiatry</journal_title>
+              <cYear>2000</cYear>
+              <volume>69</volume>
+              <first_page>161</first_page>
+            </citation>
+            <citation key="R6-22-20070823">
+              <author>Harner</author>
+              <journal_title>Mayo Clin Proc</journal_title>
+              <cYear>1987</cYear>
+              <doi provider="crossref">10.1016/S0025-6196(12)61876-X</doi>
+              <volume>62</volume>
+              <first_page>92</first_page>
+            </citation>
+            <citation key="R7-22-20070823">
+              <author>Matthies</author>
+              <journal_title>J Neurosurg</journal_title>
+              <cYear>1997</cYear>
+              <volume>86</volume>
+              <first_page>1057</first_page>
+            </citation>
+            <citation key="R8-22-20070823">
+              <author>Moller</author>
+              <journal_title>Am J Otol</journal_title>
+              <cYear>1995</cYear>
+              <volume>16</volume>
+              <first_page>115</first_page>
+            </citation>
+            <citation key="R9-22-20070823">
+              <author>Roland</author>
+              <journal_title>Am J Otolaryngol</journal_title>
+              <cYear>1994</cYear>
+              <volume>15</volume>
+              <first_page>267</first_page>
+            </citation>
+            <citation key="R11-22-20070823">
+              <author>Meier</author>
+              <journal_title>Laryngoscope</journal_title>
+              <cYear>2006</cYear>
+              <volume>116</volume>
+              <first_page>1569</first_page>
+            </citation>
+            <citation key="R12-22-20070823">
+              <author>Witt</author>
+              <journal_title>Otolaryngol Head Neck Surg</journal_title>
+              <cYear>1998</cYear>
+              <volume>119</volume>
+              <first_page>468</first_page>
+            </citation>
+            <citation key="R13-22-20070823">
+              <author>Makeieff</author>
+              <journal_title>Laryngoscope</journal_title>
+              <cYear>2005</cYear>
+              <volume>115</volume>
+              <first_page>1310</first_page>
+            </citation>
+            <citation key="R14-22-20070823">
+              <author>Wells</author>
+              <journal_title>Opt Lett</journal_title>
+              <cYear>2005</cYear>
+              <volume>30</volume>
+              <first_page>504</first_page>
+            </citation>
+            <citation key="R15-22-20070823">
+              <author>Izzo</author>
+              <journal_title>LSM</journal_title>
+              <cYear>2006</cYear>
+              <volume>38</volume>
+              <first_page>745</first_page>
+            </citation>
+            <citation key="R16-22">
+              <author>Niemz</author>
+              <cYear>2004</cYear>
+            </citation>
+            <citation key="R17-22">
+              <author>Welch</author>
+              <cYear>1995</cYear>
+            </citation>
+            <citation key="R19-22-20070823">
+              <author>Izzo</author>
+              <journal_title>JBO</journal_title>
+              <cYear>2007</cYear>
+              <volume>12</volume>
+              <first_page>021008</first_page>
+            </citation>
+            <citation key="R20-22-20070823">
+              <author>Izzo</author>
+              <journal_title>J Biomed Opt</journal_title>
+              <cYear>2007</cYear>
+              <volume>12</volume>
+              <first_page>1</first_page>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>

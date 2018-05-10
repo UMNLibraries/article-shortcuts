@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1007" timestamp="2017-06-21 12:36:50">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Acta Neurochirurgica</full_title>
+          <abbrev_title>Acta Neurochir</abbrev_title>
+          <issn media_type="print">0001-6268</issn>
+          <issn media_type="electronic">0942-0940</issn>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <month>10</month>
+            <year>2013</year>
+          </publication_date>
+          <journal_volume>
+            <volume>155</volume>
+          </journal_volume>
+          <issue>10</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Facial nerve preservation with preoperative identification and intraoperative monitoring in large vestibular schwannoma surgery</title>
+          </titles>
+          <contributors>
+            <person_name contributor_role="author" sequence="first">
+              <given_name>YuHai</given_name>
+              <surname>Zhang</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>YiJun</given_name>
+              <surname>Chen</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>YuanJie</given_name>
+              <surname>Zou</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>WenBin</given_name>
+              <surname>Zhang</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Rui</given_name>
+              <surname>Zhang</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Xiang</given_name>
+              <surname>Liu</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Zhuhai</given_name>
+              <surname>Lv</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Kun</given_name>
+              <surname>Yang</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Xinhua</given_name>
+              <surname>Hu</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>ChaoYong</given_name>
+              <surname>Xiao</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Wen</given_name>
+              <surname>Liu</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>HongYi</given_name>
+              <surname>Liu</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="online">
+            <month>7</month>
+            <day>23</day>
+            <year>2013</year>
+          </publication_date>
+          <publication_date media_type="print">
+            <month>10</month>
+            <year>2013</year>
+          </publication_date>
+          <pages>
+            <first_page>1857</first_page>
+            <last_page>1862</last_page>
+          </pages>
+          <publisher_item>
+            <identifier id_type="pii">1815</identifier>
+          </publisher_item>
+          <doi_data>
+            <doi>10.1007/s00701-013-1815-9</doi>
+            <timestamp>20130914060657</timestamp>
+            <resource>http://link.springer.com/10.1007/s00701-013-1815-9</resource>
+            <collection property="crawler-based" setbyID="springer">
+              <item crawler="iParadigms">
+                <resource>http://link.springer.com/content/pdf/10.1007/s00701-013-1815-9</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="1815_CR1">
+              <journal_title>NeuroImage</journal_title>
+              <author>O Ciccarelli</author>
+              <volume>19</volume>
+              <first_page>1545</first_page>
+              <cYear>2003</cYear>
+              <doi provider="crossref">10.1016/S1053-8119(03)00190-3</doi>
+              <unstructured_citation>Ciccarelli O, Toosy AT, Parker GJ, Wheeler-Kingshott CA, Barker GJ, Miller DH, Thompson AJ (2003) Diffusion tractography based group mapping of major white-matter pathways in the human brain. NeuroImage 19:1545–1555</unstructured_citation>
+            </citation>
+            <citation key="1815_CR2">
+              <journal_title>J Neurosurg</journal_title>
+              <author>VM Gerganov</author>
+              <volume>115</volume>
+              <first_page>1087</first_page>
+              <cYear>2011</cYear>
+              <doi provider="crossref">10.3171/2011.7.JNS11495</doi>
+              <unstructured_citation>Gerganov VM, Giordano M, Samii M, Samii A (2011) Diffusion tensor imaging-based fiber tracking for prediction of the position of the facial nerve in relation to large vestibular schwannomas. J Neurosurg 115:1087–1093</unstructured_citation>
+            </citation>
+            <citation key="1815_CR3">
+              <journal_title>Otology &amp; neurotology</journal_title>
+              <author>WP Godefroy</author>
+              <volume>30</volume>
+              <first_page>629</first_page>
+              <cYear>2009</cYear>
+              <doi provider="crossref">10.1097/MAO.0b013e3181a8651f</doi>
+              <unstructured_citation>Godefroy WP, van der Mey AG, de Bruine FT, Hoekstra ER, Malessy MJ (2009) Surgery for large vestibular schwannoma: residual tumor and outcome. Otology &amp; neurotology 30:629–634</unstructured_citation>
+            </citation>
+            <citation key="1815_CR4">
+              <journal_title>Neurosurgery</journal_title>
+              <author>M Hodaie</author>
+              <volume>66</volume>
+              <first_page>788</first_page>
+              <cYear>2010</cYear>
+              <doi provider="crossref">10.1227/01.NEU.0000367613.09324.DA</doi>
+              <unstructured_citation>Hodaie M, Quan J, Chen DQ (2010) In vivo visualization of cranial nerve pathways in humans using diffusion-based tractography. Neurosurgery 66:788–795, discussion 795–796</unstructured_citation>
+            </citation>
+            <citation key="1815_CR5">
+              <journal_title>Ann Otol Rhinol Laryngol</journal_title>
+              <author>Y Jain</author>
+              <volume>113</volume>
+              <first_page>706</first_page>
+              <cYear>2004</cYear>
+              <doi provider="crossref">10.1177/000348940411300906</doi>
+              <unstructured_citation>Jain Y, Falcioni M, Agarwal M, Taibah A, Sanna M (2004) Total facial paralysis after vestibular schwannoma surgery: probability of regaining normal function. Ann Otol Rhinol Laryngol 113:706–710</unstructured_citation>
+            </citation>
+            <citation key="1815_CR6">
+              <journal_title>J Neurosurg</journal_title>
+              <author>N Roundy</author>
+              <volume>116</volume>
+              <first_page>697</first_page>
+              <cYear>2012</cYear>
+              <doi provider="crossref">10.3171/2011.12.JNS111404</doi>
+              <unstructured_citation>Roundy N, Delashaw JB, Cetas JS (2012) Preoperative identification of the facial nerve in patients with large cerebellopontine angle tumors using high-density diffusion tensor imaging. J Neurosurg 116:697–702</unstructured_citation>
+            </citation>
+            <citation key="1815_CR7">
+              <journal_title>J Neurosurg</journal_title>
+              <author>M Samii</author>
+              <volume>105</volume>
+              <first_page>527</first_page>
+              <cYear>2006</cYear>
+              <doi provider="crossref">10.3171/jns.2006.105.4.527</doi>
+              <unstructured_citation>Samii M, Gerganov V, Samii A (2006) Improved preservation of hearing and facial nerve function in vestibular schwannoma surgery via the retrosigmoid approach in a series of 200 patients. J Neurosurg 105:527–535</unstructured_citation>
+            </citation>
+            <citation key="1815_CR8">
+              <journal_title>J Neurosurg</journal_title>
+              <author>M Samii</author>
+              <volume>112</volume>
+              <first_page>860</first_page>
+              <cYear>2010</cYear>
+              <doi provider="crossref">10.3171/2009.7.JNS0989</doi>
+              <unstructured_citation>Samii M, Gerganov VM, Samii A (2010) Functional outcome after complete surgical removal of giant vestibular schwannomas. J Neurosurg 112:860–867</unstructured_citation>
+            </citation>
+            <citation key="1815_CR9">
+              <journal_title>Neurosurgery</journal_title>
+              <author>M Samii</author>
+              <volume>40</volume>
+              <first_page>11</first_page>
+              <cYear>1997</cYear>
+              <unstructured_citation>Samii M, Matthies C (1997) Management of 1000 vestibular schwannomas (acoustic neuromas): surgical management and results with an emphasis on complications and how to avoid them. Neurosurgery 40:11–21, discussion 21–23</unstructured_citation>
+            </citation>
+            <citation key="1815_CR10">
+              <journal_title>J Neurosurg</journal_title>
+              <author>P Sampath</author>
+              <volume>92</volume>
+              <first_page>70</first_page>
+              <cYear>2000</cYear>
+              <doi provider="crossref">10.3171/jns.2000.92.1.0070</doi>
+              <unstructured_citation>Sampath P, Rini D, Long DM (2000) Microanatomical variations in the cerebellopontine angle associated with vestibular schwannomas (acoustic neuromas): a retrospective study of 1006 consecutive cases. J Neurosurg 92:70–78</unstructured_citation>
+            </citation>
+            <citation key="1815_CR11">
+              <journal_title>AJNR Am J Neuroradiol</journal_title>
+              <author>S Sartoretti-Schefer</author>
+              <volume>21</volume>
+              <first_page>810</first_page>
+              <cYear>2000</cYear>
+              <unstructured_citation>Sartoretti-Schefer S, Kollias S, Valavanis A (2000) Spatial relationship between vestibular schwannoma and facial nerve on three-dimensional T2-weighted fast spin-echo MR images. AJNR Am J Neuroradiol 21:810–816</unstructured_citation>
+            </citation>
+            <citation key="1815_CR12">
+              <journal_title>J Magn Reson Imaging: JMRI</journal_title>
+              <author>T Taoka</author>
+              <volume>24</volume>
+              <first_page>1005</first_page>
+              <cYear>2006</cYear>
+              <doi provider="crossref">10.1002/jmri.20725</doi>
+              <unstructured_citation>Taoka T, Hirabayashi H, Nakagawa H, Sakamoto M, Myochin K, Hirohashi S, Iwasaki S, Sakaki T, Kichikawa K (2006) Displacement of the facial nerve course by vestibular schwannoma: preoperative visualization using diffusion tensor tractography. J Magn Reson Imaging: JMRI 24:1005–1010</unstructured_citation>
+            </citation>
+            <citation key="1815_CR13">
+              <journal_title>J Neurol Neurosurg Psychiatry</journal_title>
+              <author>I Yamakami</author>
+              <volume>75</volume>
+              <first_page>453</first_page>
+              <cYear>2004</cYear>
+              <doi provider="crossref">10.1136/jnnp.2003.010827</doi>
+              <unstructured_citation>Yamakami I (2004) Removal of large acoustic neurinomas (vestibular schwannomas) by the retrosigmoid approach with no mortality and minimal morbidity. J Neurol Neurosurg Psychiatry 75:453–458</unstructured_citation>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>
