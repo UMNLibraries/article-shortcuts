@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/UMNLibraries/doimeta2es
-  revision: a84b23b6571e3d8dbe1df371f0a6c47abb86ab55
+  revision: 483b8592785bbba56a72c4d5ded20df5c8bbec79
   branch: master
   specs:
-    doimeta2es (0.0.3)
+    doimeta2es (0.0.4)
       curb
       dotenv
       elasticsearch
