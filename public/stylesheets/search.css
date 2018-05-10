@@ -33,13 +33,14 @@
   padding: 0;
 }
 .cite-pubinfo:after {
-  content: ": ";
+  /* the colon is consistent with Chicago style, but redundant if we use the circle separators
+  /*content: ": ";*/
 }
 .cite-date:before {
   content: " (";
 }
 .cite-date:after {
-  content: ")";
+  content: ") ";
 }
 .cite-volume:before {
   content: "Vol "

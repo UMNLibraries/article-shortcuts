@@ -36,11 +36,11 @@ var umnLibArticleSearch = {
     pubInfo: function(data) {
       var pubcontainer = $('<span class="cite-component"/>'),
           pub = $('<span class="cite-pubinfo"/>');
-      if (data.volume != "") pub.append($('<span class="cite-volume"/>').text(data.volume));
-      if (data.issue != "") pub.append($('<span class="cite-issue"/>').text(data.issue));
+      if (data.volume && data.volume != "") pub.append($('<span class="cite-volume"/>').text(data.volume));
+      if (data.issue && data.issue != "") pub.append($('<span class="cite-issue"/>').text(data.issue));
       if (data['publication-date']) pub.append($('<span class="cite-date"/>').text((new Date(data['publication-date'])).getFullYear()));
+      if (data.article.pagination && data.article.pagination != "") pub.append($('<span class="cite-pagination"/>').text(data.article.pagination));
       pubcontainer.append(pub);
-      if (data.article.pagination != "") pubcontainer.append($('<span class="cite-pagination"/>').text(data.article.pagination));
       return pubcontainer;
     }
   },
