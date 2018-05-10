@@ -1,32 +1,26 @@
-span.twitter-typeahead .tt-suggestion {
-  white-space: pre-wrap;
-}
-span.twitter-typeahead .tt-menu {
-  /*border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.05);*/
-  display: none;
-}
 .tt-suggestion {
   padding: 4px;
   background-color: #eee;
   margin-top: 4px;
-  white-space: pre-wrap;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
+.tt-suggestion:before {
+  /* chevron to be overridden by cursor pointer */
+  content: "\2023\0020";
+}
 .tt-cursor {
-  background-color: #7a0019;
+  background-color: #888;
   color: white;
 }
 .tt-cursor:before {
-  content: "\00BB\0020";
   color: white;
 }
 .tt-cursor a:link, .tt-cursor a:visited {
   color: white;
 }
+
 .cite-component-container:before {
   content: "\23FA";
 }

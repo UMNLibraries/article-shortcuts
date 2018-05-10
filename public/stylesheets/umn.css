@@ -1,0 +1,21 @@
+span.twitter-typeahead .tt-suggestion {
+  white-space: normal;
+}
+.tt-suggestion {
+}
+.tt-suggestion:before {
+  /* chevron to be overridden by cursor pointer */
+  color: #7a0019;
+}
+.tt-cursor {
+  background-color: #7a0019;
+  color: white;
+}
+.tt-cursor:before {
+  content: "\300B\0020";
+  color: white;
+}
+.tt-cursor a:link, .tt-cursor a:visited {
+  color: white;
+}
+
