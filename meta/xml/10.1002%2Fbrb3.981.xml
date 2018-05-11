@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1002" timestamp="2018-05-04 05:06:45">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Brain and Behavior</full_title>
+          <abbrev_title>Brain Behav</abbrev_title>
+          <issn>21623279</issn>
+        </journal_metadata>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Electrical stimulation-based nerve location prediction for cranial nerve VII localization in acoustic neuroma surgery</title>
+          </titles>
+          <contributors>
+            <person_name contributor_role="author" sequence="first">
+              <given_name>Dilok</given_name>
+              <surname>Puanhvuan</surname>
+              <affiliation>Department of Biomedical Engineering; Faculty of Engineering; Mahidol University; Nakhon Pathom Thailand</affiliation>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Sorayouth</given_name>
+              <surname>Chumnanvej</surname>
+              <affiliation>Surgery Department; Faculty of Medicine; Ramathibodi Hospital; Mahidol University; Bangkok Thailand</affiliation>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Yodchanan</given_name>
+              <surname>Wongsawat</surname>
+              <affiliation>Department of Biomedical Engineering; Faculty of Engineering; Mahidol University; Nakhon Pathom Thailand</affiliation>
+              <ORCID>http://orcid.org/0000-0002-6541-0305</ORCID>
+            </person_name>
+          </contributors>
+          <publication_date media_type="online">
+            <month>05</month>
+            <day>04</day>
+            <year>2018</year>
+          </publication_date>
+          <pages>
+            <first_page>e00981</first_page>
+          </pages>
+          <program name="fundref">
+            <assertion name="fundgroup">
+              <assertion name="funder_name">
+                Mahidol University
+                <assertion name="funder_identifier">http://dx.doi.org/10.13039/501100004156</assertion>
+              </assertion>
+            </assertion>
+          </program>
+          <program name="AccessIndicators">
+            <license_ref applies_to="tdm">http://doi.wiley.com/10.1002/tdm_license_1.1</license_ref>
+            <license_ref applies_to="vor" start_date="2018-05-04">http://creativecommons.org/licenses/by/4.0/</license_ref>
+          </program>
+          <archive_locations>
+            <archive name="Portico" />
+          </archive_locations>
+          <doi_data>
+            <doi>10.1002/brb3.981</doi>
+            <resource>http://doi.wiley.com/10.1002/brb3.981</resource>
+            <collection property="crawler-based">
+              <item crawler="iParadigms">
+                <resource>http://onlinelibrary.wiley.com/wol1/doi/10.1002/brb3.981/fullpdf</resource>
+              </item>
+            </collection>
+            <collection property="text-mining">
+              <item>
+                <resource content_version="vor" mime_type="application/pdf">https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fbrb3.981</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="10.1002/brb3.981-BIB0001|brb3981-cit-0001">
+              <author>Amano</author>
+              <cYear>2011</cYear>
+              <doi provider="crossref">10.1007/s00701-010-0937-6</doi>
+              <article_title>Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery</article_title>
+              <journal_title>Acta Neurochirurgica</journal_title>
+              <volume>153</volume>
+              <issue>5</issue>
+              <first_page>1059</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0002|brb3981-cit-0002">
+              <author>Aroom</author>
+              <cYear>2009</cYear>
+              <doi provider="crossref">10.1016/j.jss.2008.04.019</doi>
+              <article_title>Bioimpedance analysis: a guide to simple design and implementation</article_title>
+              <journal_title>The Journal of Surgical Research</journal_title>
+              <volume>153</volume>
+              <issue>1</issue>
+              <first_page>23</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0003|brb3981-cit-0003">
+              <author>Barker</author>
+              <cYear>1985</cYear>
+              <doi provider="crossref">10.1016/S0140-6736(85)92413-4</doi>
+              <article_title>Non-invasive magnetic stimulation of human motor cortex</article_title>
+              <journal_title>The Lancet</journal_title>
+              <volume>325</volume>
+              <issue>8437</issue>
+              <first_page>1106</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0004|brb3981-cit-0004">
+              <author>Bonmassar</author>
+              <cYear>2012</cYear>
+              <doi provider="crossref">10.1038/ncomms1914</doi>
+              <article_title>Microscopic magnetic stimulation of neural tissue</article_title>
+              <journal_title>Nature Communications</journal_title>
+              <volume>3</volume>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0005|brb3981-cit-0005">
+              <author>Bystritsky</author>
+              <cYear>2011</cYear>
+              <doi provider="crossref">10.1016/j.brs.2011.03.007</doi>
+              <article_title>A review of low-intensity focused ultrasound pulsation</article_title>
+              <journal_title>Brain Stimulation: Basic, Translational, and Clinical Research in Neuromodulation</journal_title>
+              <volume>4</volume>
+              <issue>3</issue>
+              <first_page>125</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0006|brb3981-cit-0006">
+              <author>Colletti</author>
+              <cYear>1997</cYear>
+              <doi provider="crossref">10.3109/00016489709113457</doi>
+              <article_title>Intraoperative monitoring of facial nerve antidromic potentials during acoustic neuroma surgery</article_title>
+              <journal_title>Acta Oto-Laryngologica</journal_title>
+              <volume>117</volume>
+              <issue>5</issue>
+              <first_page>663</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0007|brb3981-cit-0007">
+              <author>Colucci</author>
+              <cYear>2009</cYear>
+              <doi provider="crossref">10.1016/j.ultrasmedbio.2009.05.002</doi>
+              <article_title>Focused ultrasound effects on nerve action potential in vitro</article_title>
+              <journal_title>Ultrasound in medicine &amp; biology</journal_title>
+              <volume>35</volume>
+              <issue>10</issue>
+              <first_page>1737</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0008|brb3981-cit-0008">
+              <author>Dennis</author>
+              <cYear>1977</cYear>
+              <volume_title>State of the art in numerical analysis</volume_title>
+              <first_page>269</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0009|brb3981-cit-0009">
+              <author>Douglas</author>
+              <cYear>2012</cYear>
+              <volume_title>Introduction to linear regression analysis</volume_title>
+              <edition_number>4</edition_number>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0010|brb3981-cit-0010">
+              <author>Elaine</author>
+              <cYear>2010</cYear>
+              <volume_title>Human anatomy &amp; physiology</volume_title>
+              <edition_number>8</edition_number>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0011|brb3981-cit-0011">
+              <author>Ferreira</author>
+              <cYear>2010</cYear>
+              <article_title>AD5933-based spectrometer for electrical bioimpedance applications</article_title>
+              <journal_title>Journal of Physics: Conference Series</journal_title>
+              <volume>224</volume>
+              <issue>1</issue>
+              <first_page>012011</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0012|brb3981-cit-0012">
+              <unstructured_citation>Ferreira , J. Seoane , F. Lindecrantz , K. 2011 AD5933-based electrical bioimpedance spectrometer. Towards textile-enabled applications</unstructured_citation>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0013|brb3981-cit-0013">
+              <author>George</author>
+              <cYear>2001</cYear>
+              <volume_title>A concise guide to intraoperative monitoring</volume_title>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0014|brb3981-cit-0014">
+              <author>Johann</author>
+              <cYear>2000</cYear>
+              <doi provider="crossref">10.3171/jns.2000.93.4.0586</doi>
+              <article_title>Continuous electromyography monitoring of motor cranial nerves during cerebellopontine angle surgery</article_title>
+              <journal_title>Journal of Neurosurgery</journal_title>
+              <volume>93</volume>
+              <issue>4</issue>
+              <first_page>586</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0015|brb3981-cit-0015">
+              <author>Kandadai</author>
+              <cYear>2012</cYear>
+              <doi provider="crossref">10.1016/j.msec.2012.07.024</doi>
+              <article_title>Comparison of electrical conductivities of various brain phantom gels: Developing a ‘Brain Gel Model’</article_title>
+              <journal_title>Materials Science &amp; Engineering C Materials for biological applications</journal_title>
+              <volume>32</volume>
+              <issue>8</issue>
+              <first_page>2664</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0016|brb3981-cit-0016">
+              <author>Kartush</author>
+              <cYear>1991</cYear>
+              <doi provider="crossref">10.1055/s-2008-1056986</doi>
+              <article_title>Intraoperative cranial nerve monitoring during posterior skull base surgery</article_title>
+              <journal_title>Skull Base Surgery</journal_title>
+              <volume>2</volume>
+              <first_page>85</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0017|brb3981-cit-0017">
+              <author>Kim</author>
+              <cYear>2014</cYear>
+              <doi provider="crossref">10.1016/j.brs.2014.06.011</doi>
+              <article_title>Focused ultrasound-mediated non-invasive brain stimulation: examination of sonication parameters</article_title>
+              <journal_title>Brain Stimulation</journal_title>
+              <volume>7</volume>
+              <issue>5</issue>
+              <first_page>748</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0018|brb3981-cit-0018">
+              <author>Kombos</author>
+              <cYear>2000</cYear>
+              <doi provider="crossref">10.2176/nmc.40.501</doi>
+              <article_title>Can continuous intraoperative facial electromyography predict facial nerve function following cerebellopontine angle surgery?</article_title>
+              <journal_title>Neurologia medico-chirurgica</journal_title>
+              <volume>40</volume>
+              <issue>10</issue>
+              <first_page>501</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0019|brb3981-cit-0019">
+              <author>Kyle</author>
+              <cYear>2014</cYear>
+              <doi provider="crossref">10.1016/j.clnu.2004.06.004</doi>
+              <article_title>Bioelectrical impedance analysis; part I: review of principles and methods</article_title>
+              <journal_title>Clinical Nutrition</journal_title>
+              <volume>23</volume>
+              <issue>5</issue>
+              <first_page>1226</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0020|brb3981-cit-0020">
+              <author>Marsland</author>
+              <cYear>1987</cYear>
+              <doi provider="crossref">10.1049/ip-h-2.1987.0068</doi>
+              <article_title>Dielectric measurements with an open-ended coaxial probe</article_title>
+              <journal_title>IEE Proceedings H - Microwaves, Antennas and Propagation</journal_title>
+              <volume>134</volume>
+              <issue>4</issue>
+              <first_page>341</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0021|brb3981-cit-0021">
+              <author>McComas</author>
+              <cYear>1971</cYear>
+              <doi provider="crossref">10.1136/jnnp.34.2.121</doi>
+              <article_title>Electrophysiological estimation of the number of motor units within a human muscle</article_title>
+              <journal_title>Journal of Neurology, Neurosurgery &amp; Psychiatry</journal_title>
+              <volume>34</volume>
+              <issue>2</issue>
+              <first_page>121</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0022|brb3981-cit-0022">
+              <author>Mobashsher</author>
+              <cYear>2014</cYear>
+              <doi provider="crossref">10.1109/LAWP.2014.2340409</doi>
+              <article_title>Three-dimensional human head phantom with realistic electrical properties and anatomy</article_title>
+              <journal_title>IEEE Antennas and Wireless Propagation Letters</journal_title>
+              <volume>13</volume>
+              <first_page>1401</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0023|brb3981-cit-0023">
+              <author>Møller</author>
+              <cYear>2011</cYear>
+              <doi provider="crossref">10.1007/978-1-4419-7436-5</doi>
+              <volume_title>Intraoperative neurophysiological monitoring</volume_title>
+              <edition_number>3</edition_number>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0024|brb3981-cit-0024">
+              <author>Morimoto</author>
+              <cYear>1993</cYear>
+              <doi provider="crossref">10.3109/08941939309141189</doi>
+              <article_title>A study of the electrical bio-impedance of tumors</article_title>
+              <journal_title>Journal of Investigative Surgery</journal_title>
+              <volume>6</volume>
+              <issue>1</issue>
+              <first_page>25</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0025|brb3981-cit-0025">
+              <author>O'Brien</author>
+              <cYear>2008</cYear>
+              <article_title>White paper intraoperative neurophysiologic monitoring: modern application in hospitals, medical centers and integrated healthcare systems</article_title>
+              <journal_title>American Neuromonitoring Associates, P.C. and Impulse Monitoring</journal_title>
+              <first_page>1</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0026|brb3981-cit-0026">
+              <author>Organ</author>
+              <cYear>1968</cYear>
+              <doi provider="crossref">10.3171/jns.1968.28.1.0035</doi>
+              <article_title>Brain tumor localization using an electrical impedance technique</article_title>
+              <journal_title>Journal of Neurosurgery</journal_title>
+              <volume>28</volume>
+              <issue>1</issue>
+              <first_page>35</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0027|brb3981-cit-0027">
+              <author>Pal</author>
+              <cYear>2005</cYear>
+              <volume_title>Textbook of practical physiology</volume_title>
+              <edition_number>2</edition_number>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0028|brb3981-cit-0028">
+              <author>Peled</author>
+              <cYear>1999</cYear>
+              <doi provider="crossref">10.1002/(SICI)1522-2594(199911)42:5&lt;911::AID-MRM11&gt;3.0.CO;2-J</doi>
+              <article_title>Water diffusion, T(2), and compartmentation in frog sciatic nerve</article_title>
+              <journal_title>Magnetic Resonance in Medicine: Official journal of the Society of Magnetic Resonance in Medicine / Society of Magnetic Resonance in Medicine</journal_title>
+              <volume>42</volume>
+              <issue>5</issue>
+              <first_page>911</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0029|brb3981-cit-0029">
+              <author>Prass</author>
+              <cYear>1986</cYear>
+              <doi provider="crossref">10.1097/00006123-198609000-00010</doi>
+              <article_title>Acoustic (loudspeaker) facial electromyographic monitoring: Part 1. Evoked electromyographic activity during acoustic neuroma resection</article_title>
+              <journal_title>Neurosurgery</journal_title>
+              <volume>19</volume>
+              <issue>3</issue>
+              <first_page>392</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0030|brb3981-cit-0030">
+              <unstructured_citation>Puanhvuan , D. Chumnanvej , S. Wongsawat , Y. 2013 Linear model of peripheral nerve after surgical manipulation: Preliminary report in animal study and model shift</unstructured_citation>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0031|brb3981-cit-0031">
+              <author>Roundy</author>
+              <cYear>2012</cYear>
+              <doi provider="crossref">10.3171/2011.12.JNS111404</doi>
+              <article_title>Preoperative identification of the facial nerve in patients with large cerebellopontine angle tumors using high-density diffusion tensor imaging: Clinical article</article_title>
+              <journal_title>Journal of Neurosurgery</journal_title>
+              <volume>116</volume>
+              <issue>4</issue>
+              <first_page>697</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0032|brb3981-cit-0032">
+              <author>Teudt</author>
+              <cYear>2007</cYear>
+              <doi provider="crossref">10.1097/MLG.0b013e318074ec00</doi>
+              <article_title>Optical stimulation of the facial nerve: a new monitoring technique?</article_title>
+              <journal_title>The Laryngoscope</journal_title>
+              <volume>117</volume>
+              <issue>9</issue>
+              <first_page>1641</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0033|brb3981-cit-0033">
+              <author>Tokimura</author>
+              <cYear>2014</cYear>
+              <doi provider="crossref">10.1007/s10143-014-0561-7</doi>
+              <article_title>Intraoperative continuous monitoring of facial motor evoked potentials in acoustic neuroma surgery</article_title>
+              <journal_title>Neurosurgical Review</journal_title>
+              <volume>37</volume>
+              <issue>4</issue>
+              <first_page>669</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0034|brb3981-cit-0034">
+              <author>Ueno</author>
+              <cYear>1988</cYear>
+              <doi provider="crossref">10.1063/1.342181</doi>
+              <article_title>Localized stimulation of neural tissues in the brain by means of a paired configuration of time-varying magnetic fields</article_title>
+              <journal_title>Journal of Applied Physics</journal_title>
+              <volume>64</volume>
+              <issue>10</issue>
+              <first_page>5862</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0035|brb3981-cit-0035">
+              <author>Webster</author>
+              <cYear>2009</cYear>
+              <volume_title>Medical instrumentation: Application and design</volume_title>
+              <edition_number>4</edition_number>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0036|brb3981-cit-0036">
+              <author>Wells</author>
+              <cYear>2005</cYear>
+              <doi provider="crossref">10.1364/OL.30.000504</doi>
+              <article_title>Optical stimulation of neural tissue in vivo</article_title>
+              <journal_title>Optics Letters</journal_title>
+              <volume>30</volume>
+              <issue>5</issue>
+              <first_page>504</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0037|brb3981-cit-0037">
+              <author>Xu</author>
+              <cYear>2009</cYear>
+              <volume_title>Observation of cranial nerves in the cerebellopontine angle region by retrosigmoid approach</volume_title>
+              <volume>23</volume>
+              <first_page>454</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0038|brb3981-cit-0038">
+              <author>Yoo</author>
+              <cYear>2011</cYear>
+              <doi provider="crossref">10.1016/j.neuroimage.2011.02.058</doi>
+              <article_title>Focused ultrasound modulates region-specific brain activity</article_title>
+              <journal_title>NeuroImage</journal_title>
+              <volume>56</volume>
+              <issue>3</issue>
+              <first_page>1267</first_page>
+            </citation>
+            <citation key="10.1002/brb3.981-BIB0039|brb3981-cit-0039">
+              <author>Zhang</author>
+              <cYear>2013</cYear>
+              <doi provider="crossref">10.1007/s00701-013-1815-9</doi>
+              <article_title>Facial nerve preservation with preoperative identification and intraoperative monitoring in large vestibular schwannoma surgery</article_title>
+              <journal_title>Acta Neurochirurgica</journal_title>
+              <volume>155</volume>
+              <issue>10</issue>
+              <first_page>1857</first_page>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>

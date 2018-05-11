@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_records>
+  <doi_record owner="10.1007" timestamp="2017-06-19 16:01:10">
+    <crossref>
+      <journal>
+        <journal_metadata language="en">
+          <full_title>Acta Neurochirurgica</full_title>
+          <abbrev_title>Acta Neurochir</abbrev_title>
+          <issn media_type="print">0001-6268</issn>
+          <issn media_type="electronic">0942-0940</issn>
+        </journal_metadata>
+        <journal_issue>
+          <publication_date media_type="print">
+            <month>5</month>
+            <year>2011</year>
+          </publication_date>
+          <journal_volume>
+            <volume>153</volume>
+          </journal_volume>
+          <issue>5</issue>
+        </journal_issue>
+        <journal_article publication_type="full_text">
+          <titles>
+            <title>Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery</title>
+          </titles>
+          <contributors>
+            <person_name contributor_role="author" sequence="first">
+              <given_name>Midori</given_name>
+              <surname>Amano</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Michihiro</given_name>
+              <surname>Kohno</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Osamu</given_name>
+              <surname>Nagata</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Makoto</given_name>
+              <surname>Taniguchi</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Shigeo</given_name>
+              <surname>Sora</surname>
+            </person_name>
+            <person_name contributor_role="author" sequence="additional">
+              <given_name>Hiroaki</given_name>
+              <surname>Sato</surname>
+            </person_name>
+          </contributors>
+          <publication_date media_type="online">
+            <month>2</month>
+            <day>22</day>
+            <year>2011</year>
+          </publication_date>
+          <publication_date media_type="print">
+            <month>5</month>
+            <year>2011</year>
+          </publication_date>
+          <pages>
+            <first_page>1059</first_page>
+            <last_page>1067</last_page>
+          </pages>
+          <publisher_item>
+            <identifier id_type="pii">937</identifier>
+          </publisher_item>
+          <doi_data>
+            <doi>10.1007/s00701-010-0937-6</doi>
+            <timestamp>20110413084342</timestamp>
+            <resource>http://link.springer.com/10.1007/s00701-010-0937-6</resource>
+            <collection property="crawler-based" setbyID="springer">
+              <item crawler="iParadigms">
+                <resource>http://www.springerlink.com/index/pdf/10.1007/s00701-010-0937-6</resource>
+              </item>
+            </collection>
+          </doi_data>
+          <citation_list>
+            <citation key="937_CR1">
+              <journal_title>Acta Otolaryngol</journal_title>
+              <author>V Colletti</author>
+              <volume>117</volume>
+              <first_page>663</first_page>
+              <cYear>1997</cYear>
+              <doi provider="crossref">10.3109/00016489709113457</doi>
+              <unstructured_citation>Colletti V, Fiorino F, Policante Z, Bruni L (1997) Intraoperative monitoring of facial nerve antidromic potentials during acoustic neuroma surgery. Acta Otolaryngol 117:663–669</unstructured_citation>
+            </citation>
+            <citation key="937_CR2">
+              <journal_title>Am J Otol</journal_title>
+              <author>V Colletti</author>
+              <volume>19</volume>
+              <first_page>503</first_page>
+              <cYear>1998</cYear>
+              <unstructured_citation>Colletti V, Fiorino FG (1998) Advances in monitoring of seventh and eighth cranial nerve function during posterior fossa surgery. Am J Otol 19:503–512</unstructured_citation>
+            </citation>
+            <citation key="937_CR3">
+              <journal_title>Clin Neurophysiol</journal_title>
+              <author>CC Dong</author>
+              <volume>116</volume>
+              <first_page>588</first_page>
+              <cYear>2005</cYear>
+              <doi provider="crossref">10.1016/j.clinph.2004.09.013</doi>
+              <unstructured_citation>Dong CC, Macdonald DB, Akagami R, Westerberg B, Alkhani A, Kanaan I, Hassounah M (2005) Intraoperative facial motor evoked potential monitoring with transcranial electrical stimulation during skull base surgery. Clin Neurophysiol 116:588–596</unstructured_citation>
+            </citation>
+            <citation key="937_CR4">
+              <journal_title>Otol Neurotol</journal_title>
+              <author>AB Grayeli</author>
+              <volume>26</volume>
+              <first_page>114</first_page>
+              <cYear>2005</cYear>
+              <doi provider="crossref">10.1097/00129492-200501000-00021</doi>
+              <unstructured_citation>Grayeli AB, Guindi S, Kalamarides M, El Garem H, Smail M, Rey A, Sterkers O (2005) Four-channel electromyography of the facial nerve in vestibular schwannoma surgery: sensitivity and prognostic value for short-term facial function outcome. Otol Neurotol 26:114–120</unstructured_citation>
+            </citation>
+            <citation key="937_CR5">
+              <journal_title>Mayo Clin Proc</journal_title>
+              <author>SG Harner</author>
+              <volume>62</volume>
+              <first_page>92</first_page>
+              <cYear>1987</cYear>
+              <doi provider="crossref">10.1016/S0025-6196(12)61876-X</doi>
+              <unstructured_citation>Harner SG, Daube JR, Ebersold MJ, Beatty CW (1987) Improved preservation of facial nerve function with use of electrical monitoring during removal of acoustic neuromas. Mayo Clin Proc 62:92–102</unstructured_citation>
+            </citation>
+            <citation key="937_CR6">
+              <journal_title>Otolaryngol Head Neck Surg</journal_title>
+              <author>JW House</author>
+              <volume>93</volume>
+              <first_page>146</first_page>
+              <cYear>1985</cYear>
+              <unstructured_citation>House JW, Brackmann (1985) Facial nerve grading system. Otolaryngol Head Neck Surg 93:146–150</unstructured_citation>
+            </citation>
+            <citation key="937_CR7">
+              <journal_title>Br J Neurosurg</journal_title>
+              <author>DA Jellinek</author>
+              <volume>5</volume>
+              <first_page>19</first_page>
+              <cYear>1991</cYear>
+              <doi provider="crossref">10.3109/02688699108998442</doi>
+              <unstructured_citation>Jellinek DA, Tan LC, Symon L (1991) The impact of continuous electrophysiological monitoring on preservation of the facial nerve during acoustic tumour surgery. Br J Neurosurg 5:19–24</unstructured_citation>
+            </citation>
+            <citation key="937_CR8">
+              <journal_title>Neurol Med Chir (Tokyo)</journal_title>
+              <author>T Kombos</author>
+              <volume>40</volume>
+              <first_page>501</first_page>
+              <cYear>2000</cYear>
+              <doi provider="crossref">10.2176/nmc.40.501</doi>
+              <unstructured_citation>Kombos T, Suess O, Kern BC, Funk T, Pietilä T, Brock M (2000) Can continuous intraoperative facial electromyography predict facial nerve function following cerebellopontine angle surgery? Neurol Med Chir (Tokyo) 40:501–507</unstructured_citation>
+            </citation>
+            <citation key="937_CR9">
+              <journal_title>J Neurosurg</journal_title>
+              <author>WT Koos</author>
+              <volume>88</volume>
+              <first_page>506</first_page>
+              <cYear>1998</cYear>
+              <doi provider="crossref">10.3171/jns.1998.88.3.0506</doi>
+              <unstructured_citation>Koos WT, Day JD, Matula C, Levy DI (1998) Neurotopographic considerations in the microsurgical treatment of small acoustic neurinomas. J Neurosurg 88:506–512</unstructured_citation>
+            </citation>
+            <citation key="937_CR10">
+              <journal_title>Acta Anaesthesiol Sin</journal_title>
+              <author>CM Lin</author>
+              <volume>5</volume>
+              <first_page>141</first_page>
+              <cYear>1997</cYear>
+              <unstructured_citation>Lin CM, Hsu JC, Wu RS, Wu KC, Yu CL, Wu HF, Tan PP (1997) Evoked facial nerve EMG and brainstem auditory evoked potential monitoring in cerebellopontine angle tumor resection. Acta Anaesthesiol Sin 5:141–147</unstructured_citation>
+            </citation>
+            <citation key="937_CR11">
+              <journal_title>Chin Med J (Engl)</journal_title>
+              <author>BY Liu</author>
+              <volume>20</volume>
+              <first_page>323</first_page>
+              <cYear>2007</cYear>
+              <unstructured_citation>Liu BY, Tian YJ, Liu W, Liu SL, Qiao H, Zhang JT, Jia GJ (2007) Intraoperative facial motor evoked potentials monitoring with transcranial electrical stimulation for preservation of facial nerve function in patients with large acoustic neuroma. Chin Med J (Engl) 20:323–325</unstructured_citation>
+            </citation>
+            <citation key="937_CR12">
+              <journal_title>Am J Otol</journal_title>
+              <author>AH Mandpe</author>
+              <volume>19</volume>
+              <first_page>112</first_page>
+              <cYear>1998</cYear>
+              <unstructured_citation>Mandpe AH, Mikulec JRK, Pitts LH (1998) Comparison of response amplitude versus stimulation threshold in predicting early postoperative facial nerve fanction. Am J Otol 19:112–117</unstructured_citation>
+            </citation>
+            <citation key="937_CR13">
+              <journal_title>Otol Neurotol</journal_title>
+              <author>Y Nakao</author>
+              <volume>23</volume>
+              <first_page>93</first_page>
+              <cYear>2002</cYear>
+              <doi provider="crossref">10.1097/00129492-200201000-00020</doi>
+              <unstructured_citation>Nakao Y, Piccirillo E, Falcioni M, Taibah A, Russo A, Kobayashi T, Sanna M (2002) Prediction of facial nerve outcome using electromyographic responses in acoustic neuroma surgery. Otol Neurotol 23:93–95</unstructured_citation>
+            </citation>
+            <citation key="937_CR14">
+              <journal_title>Otol Neurotol</journal_title>
+              <author>BA Neff</author>
+              <volume>26</volume>
+              <first_page>728</first_page>
+              <cYear>2005</cYear>
+              <doi provider="crossref">10.1097/01.mao.0000178137.81729.35</doi>
+              <unstructured_citation>Neff BA, Ting J, Dickinson SL, Welling DB (2005) Facial nerve monitoring parameters as a predictor of postoperative facial nerve outcomes after vestibular schwannoma resection. Otol Neurotol 26:728–732</unstructured_citation>
+            </citation>
+            <citation key="937_CR15">
+              <journal_title>Neurosurgery</journal_title>
+              <author>RL Prass</author>
+              <volume>19</volume>
+              <first_page>392</first_page>
+              <cYear>1986</cYear>
+              <doi provider="crossref">10.1097/00006123-198609000-00010</doi>
+              <unstructured_citation>Prass RL, Lüders H (1986) Acoustic (loudspeaker) facial electromyographic monitoring: Part 1. Evoked electromyographic activity during acoustic neuroma resection. Neurosurgery 19:392–400</unstructured_citation>
+            </citation>
+            <citation key="937_CR16">
+              <journal_title>J Neurosurg</journal_title>
+              <author>J Romstöck</author>
+              <volume>93</volume>
+              <first_page>586</first_page>
+              <cYear>2000</cYear>
+              <doi provider="crossref">10.3171/jns.2000.93.4.0586</doi>
+              <unstructured_citation>Romstöck J, Strauss C, Fahlbusch R (2000) Continuous electromyography monitoring of motor cranial nerves during cerebellopontine angle surgery. J Neurosurg 93:586–593</unstructured_citation>
+            </citation>
+            <citation key="937_CR17">
+              <journal_title>Laryngoscope</journal_title>
+              <author>H Silverstein</author>
+              <volume>104</volume>
+              <first_page>539</first_page>
+              <cYear>1994</cYear>
+              <doi provider="crossref">10.1002/lary.5541040506</doi>
+              <unstructured_citation>Silverstein H, Willcox TO Jr, Rosenberg SI, Seidman MD (1994) Prediction of facial nerve function following acoustic neurona resection using intraoperative facial nerve stimulation. Laryngoscope 104:539–544</unstructured_citation>
+            </citation>
+            <citation key="937_CR18">
+              <journal_title>Rinsho Noha</journal_title>
+              <author>M Taniguchi</author>
+              <volume>40</volume>
+              <first_page>553</first_page>
+              <cYear>1998</cYear>
+              <unstructured_citation>Taniguchi M (1998) Intraoperative monitoring for facial nerve preservation during acoustic neurinoma removal. Rinsho Noha 40:553–558, Jpn</unstructured_citation>
+            </citation>
+          </citation_list>
+        </journal_article>
+      </journal>
+    </crossref>
+  </doi_record>
+</doi_records>
