@@ -22,7 +22,7 @@
 }
 
 .cite-component-container:before {
-  content: "\23FA";
+  content: "\0020\2022\0020";
 }
 .cite-component-container:first-child:before,
 .cite-component-content:last-child:before {
