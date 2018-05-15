@@ -8,8 +8,9 @@ class SearchController < ApplicationController
   def search
     #render(nothing: true, status: :bad_request) unless params[:q].to_s.length > 0
 
-    # Remove leading,trailing newlines and trailing dots
-    q = params[:q].squish.strip.sub /\.*\z/, ''
+    # Remove leading,trailing,inner newlines and trailing dots
+    q = params[:q].gsub(/\r?\n/, '').squish.strip.sub /\.*\z/, ''
+    puts q
     @dois = doi(q)
     # Query by list of extracted DOIs or by normal search
     es_body = if !@dois.empty?
@@ -17,7 +18,7 @@ class SearchController < ApplicationController
     elsif cite = parse_cite(q)
       es_by_title_author(cite[:title], cite[:authors])
     else
-      es_by_any(params[:q])
+      es_by_any(q)
     end
     result = es.search index: 'article', body: es_body
     article_results = result['hits']['hits'].map { |r| ArticleResult.new r }
