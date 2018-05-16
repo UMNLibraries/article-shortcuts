@@ -68,13 +68,13 @@ class SearchController < ApplicationController
     # Maybe map min score to search length?
     min_score = case
       when search.length < 20
-        10
+        20
       when search.length < 30
-        30
-      when search.length < 40
         40
+      when search.length < 40
+        60
       else
-        30
+        70
     end
     Rails.logger.warn "Min score: #{min_score}"
     {
@@ -84,8 +84,8 @@ class SearchController < ApplicationController
       query: {
         simple_query_string: {
           query: search,
-          #fields: ['article.title^2', 'article.authors.name.surname']
-          fields: ['article.title',]
+          fields: ['article.title^2', 'article.authors.name.surname']
+          #fields: ['article.title',]
         }
       }
     }
