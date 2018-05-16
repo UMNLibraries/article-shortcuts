@@ -73,7 +73,7 @@ $(document).ready(function() {
   $('#citesearch').typeahead({
     hint: false,
     highlight: true,
-    minLength: 15
+    minLength: 40
   },
   {
     source: bh,
