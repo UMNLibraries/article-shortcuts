@@ -3,7 +3,7 @@ class ArticleResult < Result
 
   def initialize(args)
     super
-    @article = args['_source']['article']
+    @article = args['_source']['article'] rescue {}
   end
 
 end

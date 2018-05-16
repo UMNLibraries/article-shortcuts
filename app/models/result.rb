@@ -11,7 +11,7 @@ class Result
     @full_title = es_result['_source']['full_title']
     @volume = es_result['_source']['volume']
     @issue = es_result['_source']['issue']
-    @publication_date = DateTime.parse(es_result['_source']['publication_date'])
+    @publication_date = DateTime.parse(es_result['_source']['publication_date']) rescue nil
   end
 
   # JSON:API requires an id, or the serializer will only return one record
