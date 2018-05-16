@@ -67,11 +67,11 @@ class SearchController < ApplicationController
   def es_by_any(search, size=5)
     # Maybe map min score to search length?
     min_score = case
-      when search.length < 20
-        20
       when search.length < 30
-        40
+        20
       when search.length < 40
+        40
+      when search.length < 50
         60
       else
         70
