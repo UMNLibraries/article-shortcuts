@@ -42,3 +42,20 @@ References:
   Facial nerve preservation with preoperative identification and intraoperative
   monitoring in large vestibular schwannoma surgery. Acta Neurochirurgica,
   155(10), 1857–1862. https://doi.org/10.1007/s00701-013-1815-9
+
+
+### Notes & Local info
+(For internal use)
+#### Janus search logs - analyze query length
+Using `jq`, long search strings can be retrieved from UMN Janus search logs
+Related: https://github.com/UMNLibraries/janus-deploy
+```shell
+# Assuming a directory with uncompressed Janus redirect logs
+# These are linewise JSON objects, not valid JSON as a complete file
+
+# Get all search queries > 100 characters
+cat redirect.json* | jq -r 'select(.event.query.target == "MncatDiscovery")|(select(.event.query.search|length > 100))|.event.query.search'
+
+# Tab separated output of search strings and their character length (unicode codepoints)
+cat redirect.json* |jq -r 'select(.event.query.target == "MncatDiscovery")|(.event.query.search + "\t" + (.event.query.search|length|tostring))'
+```
