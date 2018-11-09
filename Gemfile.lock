@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/UMNLibraries/doimeta2es
-  revision: 483b8592785bbba56a72c4d5ded20df5c8bbec79
+  revision: eb279a10e972be7a1ec372fd322a31ddac0c82e9
   branch: master
   specs:
     doimeta2es (0.0.4)
@@ -12,7 +12,7 @@ GIT
 
 GIT
   remote: https://github.com/UMNLibraries/simpledoi-ruby
-  revision: 251ddb90f2b36d4622837d8b52321ae88bcb9c98
+  revision: 6d59fd272167b758e752da560d2e4a1f97391788
   branch: master
   specs:
     simple_doi (1.2.1)
@@ -84,7 +84,7 @@ GEM
       activesupport
     concurrent-ruby (1.0.5)
     crass (1.0.4)
-    curb (0.9.4)
+    curb (0.9.6)
     dotenv (2.4.0)
     elasticsearch (6.0.2)
       elasticsearch-api (= 6.0.2)
@@ -96,7 +96,7 @@ GEM
       multi_json
     erubi (1.7.1)
     execjs (2.7.0)
-    faraday (0.15.1)
+    faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
     gdbm (2.0.0)
