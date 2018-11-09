@@ -10,7 +10,6 @@ class SearchController < ApplicationController
 
     # Remove leading,trailing,inner newlines and trailing dots
     q = params[:q].gsub(/\r?\n/, '').squish.strip.sub /\.*\z/, ''
-    puts q
     @dois = doi(q)
     # Query by list of extracted DOIs or by normal search
     es_body = if !@dois.empty?
@@ -27,7 +26,7 @@ class SearchController < ApplicationController
   end
 
   protected
-  # Returns a SimpleDOI::DOI if one is found in the input string
+  # Returns an array of SimpleDOI::DOI if any are found in the input string
   def doi(search)
     SimpleDOI.extract(search).map { |d| d.to_s.upcase }
   end
