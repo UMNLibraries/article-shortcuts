@@ -46,7 +46,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'active_model_serializers'
 gem 'elasticsearch', '~>6.0.0'
-gem 'simple_doi', '~>1.2.1', git: 'https://github.com/UMNLibraries/simpledoi-ruby', branch: 'master'
+gem 'simple_doi', '~>1.2.3', git: 'https://github.com/UMNLibraries/simpledoi-ruby', branch: 'master'
 gem 'doimeta2es', git: 'https://github.com/UMNLibraries/doimeta2es', branch: 'master'
 gem 'anystyle', git: 'https://github.com/inukshuk/anystyle'
 gem 'curb'
