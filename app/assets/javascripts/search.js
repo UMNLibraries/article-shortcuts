@@ -90,6 +90,6 @@ $(document).ready(function() {
   });
   $('#citesearch').bind('typeahead:select', function(evt, suggestion) {
     evt.preventDefault();
-    window.location = umnLibArticleSearch.citation.url(suggestion.attributes.doi);
+    //window.location = umnLibArticleSearch.citation.url(suggestion.attributes.doi);
   });
 });
