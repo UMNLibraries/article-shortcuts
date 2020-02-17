@@ -51,3 +51,4 @@ gem 'doimeta2es', git: 'https://github.com/UMNLibraries/doimeta2es', branch: 'ma
 gem 'anystyle', git: 'https://github.com/inukshuk/anystyle'
 gem 'curb'
 gem 'gdbm'
+gem 'bibtex-ruby', '~>5.1.0'
