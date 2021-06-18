@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.4'
+gem 'rails', '~> 6.1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use Puma as the app server
@@ -49,6 +49,6 @@ gem 'elasticsearch', '~>6.0.0'
 gem 'simple_doi', '~>1.3.0', git: 'https://github.com/UMNLibraries/simpledoi-ruby'
 gem 'doimeta2es', git: 'https://github.com/UMNLibraries/doimeta2es'
 gem 'anystyle', git: 'https://github.com/inukshuk/anystyle'
-gem 'curb'
+gem 'curb', '~>0.9.11'
 gem 'gdbm'
 gem 'bibtex-ruby', '~>5.1.0'
