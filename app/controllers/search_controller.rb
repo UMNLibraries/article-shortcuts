@@ -57,7 +57,7 @@ class SearchController < ApplicationController
     {
       query: {
         ids: {
-          type: 'article', values: dois
+          values: dois
         }
       }
     }
