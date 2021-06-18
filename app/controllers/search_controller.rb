@@ -50,7 +50,8 @@ class SearchController < ApplicationController
 
   def es
     # reads ENV['ELASTICSEARCH_URL'] or localhost:9200
-    @es ||= Elasticsearch::Client.new log: true
+    # Set ENV['ELASTICSEARCH_VERBOSE'] for verbose logging (which is obnoxious)
+    @es ||= Elasticsearch::Client.new log: !!ENV['ELASTICSEARCH_VERBOSE']
   end
 
   def es_by_dois(dois)

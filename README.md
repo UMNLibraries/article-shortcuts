@@ -59,3 +59,8 @@ cat redirect.json* | jq -r 'select(.event.query.target == "MncatDiscovery")|(sel
 # Tab separated output of search strings and their character length (unicode codepoints)
 cat redirect.json* |jq -r 'select(.event.query.target == "MncatDiscovery")|(.event.query.search + "\t" + (.event.query.search|length|tostring))'
 ```
+
+### Environment Variables
+* `ELASTICSEARCH_URL`: specify the search index to connect to, defaults to
+  `http://localhost:9200` if unset
+* `ELASTICSEARCH_VERBOSE`: Enable verbose logging from the Elasticsearch client
