@@ -103,6 +103,51 @@ class SearchControllerTest < ActionDispatch::IntegrationTest
           }
         }.to_json
       )
+
+      # Single citation
+      stub_request(:post, 'http://localhost:9200/article/_search')
+        .with(
+          body: '{"from":0,"size":5,"query":{"bool":{"must":{"match":{"article.title":{"query":"Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery","operator":"and"}}},"minimum_should_match":0,"should":{"nested":{"path":"article.authors","query":{"match":{"article.authors.name.surname":{"query":"Amano M. Kohno M. Nagata O. Taniguchi M. Sora S. Sato H."}}}}}}}}'
+        )
+        .to_return(
+          status: 200,
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: {
+            hits: {
+              hits: [
+                {
+                  _index: 'article',
+                  _type: 'article',
+                  _id: '10.1007/s00701-010-0937-6',
+                  _score: 60,
+                  _source: {
+                    doi: '10.1007/s00701-010-0937-6',
+                    url: 'https://doi.org/10.1007/s00701-010-0937-6',
+                    volume: 153,
+                    issue: 5,
+                    full_title: 'Acta Neurochirurgica',
+                    abbrev_title: '',
+                    article: {
+                      title: 'Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery.',
+                      pagination: '1059-1067',
+                      authors: [
+                        'Amano, M.',
+                        'Kohno, M.',
+                        'Nagata, O.',
+                        'Taniguchi, M.',
+                        'Sora, S.',
+                        'Sato, H.'
+                      ]
+                    }
+
+                  }
+                }
+              ]
+            }
+          }.to_json
+        )
   end
 
   def test_single_string_search
@@ -125,7 +170,7 @@ class SearchControllerTest < ActionDispatch::IntegrationTest
       # If WebMock errors that no stub has been defined, maybe there is an error in serializing these to a query for ids.
       # Maybe I'll figure out how to write a test for that in this context.
       # For now if webmock errors this can be assumed to be a fault in the code!
-      assert true == false, 'There is possibly an error SearchController#es_by_dois if we got here, multiple DOIs should be serialized into ids: values[]'
+      assert true == false, 'There is an error SearchController#es_by_dois if we got here, multiple DOIs should be serialized into ids: values[]'
     end
 
 
@@ -138,5 +183,18 @@ class SearchControllerTest < ActionDispatch::IntegrationTest
     assert_equal 'Lovelace, A', js['data'][1]['attributes']['article']['authors'].first
   end
 
+  def test_single_citation_search
+    begin
+      get search_url params: {q: 'Amano, M., Kohno, M., Nagata, O., Taniguchi, M., Sora, S., & Sato, H. (2011). Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery. Acta Neurochirurgica, 153(5), 1059–1067.'}
 
+    rescue WebMock::NetConnectNotAllowedError
+      assert true == false, 'There is an error in SearchController#es_by_title_author if we got here, a parsed citation should be serialized into the JSON spec noted in stub_request'
+    end
+
+    js = JSON.parse @response.body
+    assert_equal 1, js['data'].count, 'One result object should be returned'
+    assert_equal '10.1007/S00701-010-0937-6', js['data'][0]['id'], 'DOI should be upcased into the id property'
+    assert_equal 'Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery.', js['data'][0]['attributes']['article']['title']
+    assert_equal 'Sora, S.', js['data'][0]['attributes']['article']['authors'][4]
+  end
 end
