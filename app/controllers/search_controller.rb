@@ -5,6 +5,12 @@ class SearchController < ApplicationController
   CITE_AUTHORS_MIN_LENGTH = 10
   CITE_TITLE_MIN_LENGTH = 20
 
+  def es
+    # reads ENV['ELASTICSEARCH_URL'] or localhost:9200
+    # Set ENV['ELASTICSEARCH_VERBOSE'] for verbose logging (which is obnoxious)
+    @es ||= Elasticsearch::Client.new log: !!ENV['ELASTICSEARCH_VERBOSE']
+  end
+
   def search
     #render(nothing: true, status: :bad_request) unless params[:q].to_s.length > 0
 
@@ -46,12 +52,6 @@ class SearchController < ApplicationController
     if authors.length >= CITE_AUTHORS_MIN_LENGTH && title.length >= CITE_TITLE_MIN_LENGTH
       {authors: authors, title: title}
     end
-  end
-
-  def es
-    # reads ENV['ELASTICSEARCH_URL'] or localhost:9200
-    # Set ENV['ELASTICSEARCH_VERBOSE'] for verbose logging (which is obnoxious)
-    @es ||= Elasticsearch::Client.new log: !!ENV['ELASTICSEARCH_VERBOSE']
   end
 
   def es_by_dois(dois)

@@ -141,7 +141,51 @@ class SearchControllerTest < ActionDispatch::IntegrationTest
                         'Sato, H.'
                       ]
                     }
+                  }
+                }
+              ]
+            }
+          }.to_json
+        )
 
+      stub_request(:post, "http://localhost:9200/article/_search")
+        .with(
+          body: '{"query":{"ids":{"values":["10.1007/S00701-010-0937-6","10.3109/00016489709113457","10.1002/BRB3.981"]}}}'
+        )
+        .to_return(
+          status: 200,
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: {
+            hits: {
+              hits: [
+                {
+                  _source: {
+                    doi: '10.1007/S00701-010-0937-6',
+                    article: {
+                      title: 'Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery'
+                    }
+                  }
+                },
+                {
+                  _source: {
+                    doi: '10.3109/00016489709113457',
+                    article: {
+                      title: 'Intraoperative monitoring of facial nerve antidromic potentials during acoustic neuroma surgery',
+                      authors: [
+                        'Coletti, V.',
+                        'Fiorino, F.'
+                      ]
+                    }
+                  }
+                },
+                {
+                  _source: {
+                    doi: '10.1002/BRB3.981',
+                    article: {
+                      title: 'Electrical stimulation-based nerve location prediction for cranial nerve VII localization in acoustic neuroma surgery'
+                    }
                   }
                 }
               ]
@@ -197,4 +241,22 @@ class SearchControllerTest < ActionDispatch::IntegrationTest
     assert_equal 'Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery.', js['data'][0]['attributes']['article']['title']
     assert_equal 'Sora, S.', js['data'][0]['attributes']['article']['authors'][4]
   end
+
+  def test_multiple_citation_with_doi_search
+    cites = [
+      'Amano, M., Kohno, M., Nagata, O., Taniguchi, M., Sora, S., & Sato, H. (2011). Intraoperative continuous monitoring of evoked facial nerve electromyograms in acoustic neuroma surgery. Acta Neurochirurgica, 153(5), 1059–1067. https://doi.org/10.1007/s00701-010-0937-6',
+      'Colletti, V., Fiorino, F., Policante, Z., & Bruni, L. (1997). Intraoperative monitoring of facial nerve antidromic potentials during acoustic neuroma surgery. Acta Oto‐Laryngologica, 117(5), 663–669. https://doi.org/10.3109/00016489709113457',
+      'Electrical stimulation-based nerve location prediction for cranial nerve VII localization in acoustic neuroma surgery Dilok Puanhvuan, Sorayouth Chumnanvej, Yodchanan Wongsawa ISSN: 21623279 , 2162-3279; DOI: 10.1002/brb3.981 Brain and behavior. , 2018, (0), p.e00981'
+    ].join(" ")
+    begin
+      get search_url params: {q: cites}
+    rescue WebMock::NetConnectNotAllowedError
+      assert true == false, 'There is an error in SearchController#search or SearchController#es_by_dois if we got here. 3 DOIs should be extracted from the search citations and passed to WebMock'
+    end
+
+    js = JSON.parse @response.body
+    assert_equal 3, js['data'].count, 'Three results should be returned for 3 input DOIs'
+    assert_equal 'Fiorino, F.', js['data'][1]['attributes']['article']['authors'][1]
+  end
+
 end
